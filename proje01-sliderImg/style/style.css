@@ -1,0 +1,67 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  width: 90vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.panel {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  cursor: pointer;
+  -webkit-box-flex: .5;
+      -ms-flex: .5;
+          flex: .5;
+  height: 80vh;
+  margin: 10px;
+  border-radius: 50px;
+  position: relative;
+  -webkit-transition: -webkit-box-flex .7s ease-in;
+  transition: -webkit-box-flex .7s ease-in;
+  transition: flex .7s ease-in;
+  transition: flex .7s ease-in, -webkit-box-flex .7s ease-in, -ms-flex .7s ease-in;
+}
+
+.panel.active {
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+}
+
+.panel.active h3 {
+  opacity: 1;
+}
+
+h3 {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: #fff;
+  font-size: 25px;
+  opacity: 0;
+  -webkit-transition: opacity .2s ease-in .3s;
+  transition: opacity .2s ease-in .3s;
+}
+/*# sourceMappingURL=style.css.map */

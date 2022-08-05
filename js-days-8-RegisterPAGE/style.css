@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: steelblue;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.4);
+  border: none;
+  border-radius: 5px;
+}
+
+.container h1 {
+  font-size: 1.8rem;
+  text-align: center;
+  color: #fff;
+  padding: 2.5rem 0 1.5rem;
+}
+
+.container form {
+  padding: 1rem 3.5rem 4rem;
+}
+
+.container form .form-control {
+  width: 300px;
+}
+
+.container form .form-control input {
+  margin-bottom: 1.5rem;
+  color: #fff;
+  width: 100%;
+  font-size: 18px;
+  padding: 0.5rem 0;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+  outline: none;
+}
+
+.container form .form-control input:-webkit-autofill, .container form .form-control input:-webkit-autofill:focus {
+  -webkit-transition: background-color 600000s 0s, color 600000s 0s;
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+.container form .form-control input::-webkit-input-placeholder {
+  color: #eee;
+}
+
+.container form .form-control input:focus::-webkit-input-placeholder {
+  color: steelblue;
+}
+
+.container form .form-control input:focus {
+  border-bottom-color: steelblue;
+}
+
+.container form .btn {
+  cursor: pointer;
+  color: #fff;
+  font-size: 18px;
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0 2.5rem;
+  background-color: steelblue;
+  border: none;
+  border-radius: 5px;
+}
+
+.container form .btn:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+.container form p {
+  color: #fff;
+}
+
+.container form p a {
+  text-decoration: none;
+  color: steelblue;
+}
+
+.container form p a:hover {
+  color: #87afcf;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: sans-serif;
+    overflow: hidden;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    
+    &.hover-left{ 
+        .left{
+
+            width: 75%;
+        }
+        .right{
+            width: 25%;
+        }
+    }
+    &.hover-right{
+        .right{
+            width: 75%;
+        }
+        .left{
+            width: 25%;
+        }
+    }
+    .split{
+        transition: all .7s linear;
+        position: absolute;
+        width: 50%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        &.left{
+            background-image: url("https://wallpaperaccess.com/full/3012890.jpg");
+            left: 0;
+            .btn{
+                &:hover{
+                    background-color: rgba(87, 84, 236, 1);
+                }
+            }
+            &::before{
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-color: rgba(87, 84, 236, 0.7);
+            }
+        }
+        &.right{
+            background-image: url("https://images.alphacoders.com/111/thumb-1920-1113834.png");
+            right: 0;
+            .btn{
+                &:hover{
+                    background-color: rgba(28, 122, 28, 1);
+                }
+            }
+            &::before{
+                content: "";
+                width: 100%;
+                height: 100%;
+                position: absolute;
+                background-color: rgba(43, 43, 43, 0.8);
+            }
+        }
+        
+        h1{
+            font-size: 4rem;
+            color: #fff;
+            position: absolute;
+            left: 50%;
+            top: 30%;
+            transform: translateX(-50%);
+            white-space: nowrap;
+            @media screen and (max-width:800px) {
+                top: 32%;
+                font-size:2rem;
+            }
+        }
+        .btn{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+            position: absolute;
+            left: 50%;
+            top: 40%;
+            transform: translateX(-50%);
+            padding: 1.2rem;
+            width: 13rem;
+            cursor: pointer;
+            background: none;
+            text-decoration: none;
+            border: 2px solid #fff;
+            @media screen and (max-width:800px) {
+                width:11rem;
+                padding: 1rem;
+            }
+        }
+    }
+}

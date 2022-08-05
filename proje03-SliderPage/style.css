@@ -1,0 +1,12 @@
+i{
+    cursor: pointer;
+}
+i:hover{
+    opacity: .9;
+}
+
+i:active{
+    transform: scale(.98);
+}
+
+

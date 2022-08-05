@@ -1,0 +1,33 @@
+:root {
+    --darkThema-backGround: black;
+    --darkThema-color: #fff;
+    --lightThema-backGround: #fff;
+    --darkThema-color: black;
+
+}
+
+body {
+    
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+span {
+    font-size: 18.5px;
+    display: block;
+    margin: 15px;
+}
+
+div {
+    padding: 1rem 2rem 2rem;
+    margin-top: 1rem;
+    width: 50%;
+    background-color: beige;
+    text-align: center;
+}

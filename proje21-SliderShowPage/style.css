@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  overflow: hidden;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.container.hover-left .left {
+  width: 75%;
+}
+
+.container.hover-left .right {
+  width: 25%;
+}
+
+.container.hover-right .right {
+  width: 75%;
+}
+
+.container.hover-right .left {
+  width: 25%;
+}
+
+.container .split {
+  -webkit-transition: all .7s linear;
+  transition: all .7s linear;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.container .split.left {
+  background-image: url("https://wallpaperaccess.com/full/3012890.jpg");
+  left: 0;
+}
+
+.container .split.left .btn:hover {
+  background-color: #5754ec;
+}
+
+.container .split.left::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(87, 84, 236, 0.7);
+}
+
+.container .split.right {
+  background-image: url("https://images.alphacoders.com/111/thumb-1920-1113834.png");
+  right: 0;
+}
+
+.container .split.right .btn:hover {
+  background-color: #1c7a1c;
+}
+
+.container .split.right::before {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background-color: rgba(43, 43, 43, 0.8);
+}
+
+.container .split h1 {
+  font-size: 4rem;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 30%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 800px) {
+  .container .split h1 {
+    top: 32%;
+    font-size: 2rem;
+  }
+}
+
+.container .split .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+  position: absolute;
+  left: 50%;
+  top: 40%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  padding: 1.2rem;
+  width: 13rem;
+  cursor: pointer;
+  background: none;
+  text-decoration: none;
+  border: 2px solid #fff;
+}
+
+@media screen and (max-width: 800px) {
+  .container .split .btn {
+    width: 11rem;
+    padding: 1rem;
+  }
+}
+/*# sourceMappingURL=style.css.map */

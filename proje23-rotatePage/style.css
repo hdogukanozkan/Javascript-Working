@@ -1,0 +1,154 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #333;
+  color: #222;
+  margin: 0;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+.container {
+  background-color: #fafafa;
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 50px;
+  -webkit-transition: -webkit-transform 0.5s linear;
+  transition: -webkit-transform 0.5s linear;
+  transition: transform 0.5s linear;
+  transition: transform 0.5s linear, -webkit-transform 0.5s linear;
+}
+
+.container.show-nav {
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+}
+
+.container.show-nav .circle {
+  -webkit-transform: rotate(-75deg);
+          transform: rotate(-75deg);
+}
+
+.container.show-nav + nav li {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+  -webkit-transition-delay: 0.3s;
+          transition-delay: 0.3s;
+}
+
+.container .circle-container {
+  position: fixed;
+  top: -100px;
+  left: -100px;
+}
+
+.container .circle-container .circle {
+  background-color: #ff7979;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  position: relative;
+  -webkit-transition: -webkit-transform 0.5s linear;
+  transition: -webkit-transform 0.5s linear;
+  transition: transform 0.5s linear;
+  transition: transform 0.5s linear, -webkit-transform 0.5s linear;
+}
+
+.container .circle-container .circle button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 100px;
+  background: transparent;
+  border: 0;
+  font-size: 26px;
+  color: #fff;
+}
+
+.container .circle-container .circle button:focus {
+  outline: none;
+}
+
+.container .circle-container .circle button#open {
+  left: 60%;
+}
+
+.container .circle-container .circle button#close {
+  top: 60%;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  -webkit-transform-origin: top left;
+          transform-origin: top left;
+}
+
+.container .content {
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.container .content h1 {
+  margin: 0;
+}
+
+.container .content small {
+  color: #555;
+  font-style: italic;
+}
+
+.container .content p {
+  color: #333;
+  line-height: 1.5;
+}
+
+.container .content img {
+  max-width: 100%;
+}
+
+nav {
+  position: fixed;
+  bottom: 40px;
+  left: 0;
+  z-index: 100;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 30px;
+}
+
+nav ul li + li {
+  margin-left: 15px;
+  -webkit-transform: translateX(-150%);
+          transform: translateX(-150%);
+}
+
+nav ul li + li + li {
+  margin-left: 30px;
+  -webkit-transform: translateX(-200%);
+          transform: translateX(-200%);
+}
+
+nav ul li {
+  text-transform: uppercase;
+  color: #fff;
+  margin: 40px 0;
+  -webkit-transform: translateX(-100%);
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.4s ease-in;
+  transition: -webkit-transform 0.4s ease-in;
+  transition: transform 0.4s ease-in;
+  transition: transform 0.4s ease-in, -webkit-transform 0.4s ease-in;
+}
+
+nav ul li i {
+  font-size: 20px;
+  margin-right: 10px;
+}
+/*# sourceMappingURL=style.css.map */
